@@ -1,0 +1,358 @@
+@media only screen and (max-width: 600px) {
+    .menu-button {
+        display: block;
+    }
+    .menu-button i {
+        font-size: 41px;
+        color: white;
+    }
+    .main-holder {
+        display: block !important;
+    }
+    .main-holder .nav-menu {
+        width: 100% ;
+        transition: ease 1s;
+        min-height: 10vh;
+    }
+    .main-holder .nav-active {
+        transition: ease 0.2s;
+        min-height: 100vh;
+    }
+    .nav-menu .menu {
+        display: none;
+    }
+    .nav-menu .menu .active {
+        width: 93%;
+        height: 100%;
+        padding-bottom: 6px;
+        background: #FFFFFF;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: auto;
+    }
+    .main-holder .nav-menu .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .main-holder .nav-menu .logo {
+        
+        padding-left:  16px;
+        padding-right: 16px;
+    }
+    .nav-menu .nav-logo {
+        margin: auto 0;
+    }
+
+    .main-area {
+        width: 100% !important;
+        margin-left: 0;
+    }
+    .main-area .profinfo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .main-area .profinfo a {
+        display: block;
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+    .main-area .profinfo {
+        margin-bottom: 0;
+    }
+    .main-area .form-area .inputs, select  {
+        width: 100%;
+       
+    }
+    .main-area .form-area label {
+        margin-left: 5px;
+    }
+    .select-holder,.form-holder {
+        width: 96%;
+        margin: auto;
+    }
+    .main-area .form-area textarea {
+       width: 100%;
+        margin: auto;
+      
+    }
+    .document-area .documents {
+        width: 93%;
+        margin: auto;
+    }
+    .document-area h6 {
+        width: 93%;
+        margin: auto;
+    }
+    .dropzone, .dropzone2 {
+        width: 93% !important;
+    }
+    .photos .img-holder {
+        width: 30%;
+        margin: 0 auto 15px auto;
+        
+    }
+    .main-area .edit-title {
+        width: 93%;
+
+        margin: 40px auto 21px auto;
+    }
+
+    .photos h6 {
+        width: 94%;
+        margin: 0 auto 15px auto;
+
+    }
+    .button-holder .main-button {
+        width: 45% !important;
+    }
+    .button-holder {
+        width: 93%;
+        margin: 20px auto;
+    }
+    .slide-area {
+        display: none;
+    }
+    .mobile-slider {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .mobile-slider .swiper-slide {
+        /* height: 278px !important; */
+        width: 260px !important;
+    }
+    .mobile-slider .swiper-slide:first-child {
+        margin-left: 100px;
+    }
+
+    .mobile-slider img {
+        height: 278px !important;
+        width: 257px !important;
+    }
+
+    /* lordandladies*/
+    .main-area .head .left-side{
+        display: block !important;
+    }
+
+    .main-area .head .desktop-search  {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+    }
+    .main-area .head
+    {
+        width: 95%;
+        margin: auto;
+    }
+    .main-area .sires-title
+    {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    .main-button {
+        font-size: 14px !important;
+    white-space: nowrap;
+    width: 100%;
+    }
+    .main-area .head .search input {
+        width: 100% !important;
+    }
+    .main-area .head-foot {
+        width: 95%;
+        margin: 20px auto 10px auto;
+    }
+    .main-area .head-foot .check-area {
+        width: 100%;
+        justify-content: start !important;
+    }
+    .form-check {
+        margin-right: 10px;
+    }
+    .sort-area {
+        margin: 0 !important;
+    }
+
+    .desktop-table {
+        display: none;
+    }
+    .mobile-table {
+        display: block;
+        width: 95%;
+    margin: auto;
+    
+    }
+    .mobile-table .m-holder {
+        background: #F5F7FF;
+        border-radius: 10px;
+        height: 20vh;
+    }
+    .mobile-table img {
+        border-radius: 5px;
+        width: 43px;
+        height: 39px;
+    }
+    .mobile-table .title h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 100%;
+        /* identical to box height, or 12px */
+        
+        text-transform: uppercase;
+        
+        color: #949494;
+    }
+    .mobile-table .title h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        /* identical to box height, or 14px */
+        
+        
+        color: #212121;
+    }
+
+    /* addsire */
+
+    .form-area .form-holder{
+        display: block !important;
+    }
+    #firstdr {
+        width: 100%;
+    }
+    .second-add {
+        display:none ;
+    }
+
+    /* litters */ 
+
+    .mobile-table .m-holder-2 {
+        background: #F5F7FF;
+        border-radius: 10px;
+        height: 35vh;
+    }
+    /* addlitter */
+
+    .draft-button {
+        width: 96% !important;
+        margin: auto;
+    }
+
+    .main-area .sires-title {
+        margin: 20px auto;
+    }
+
+    /* waitinglists */
+    .head-foot  label {
+        width: 93%;
+        margin: 0 auto 10px auto;
+    }
+
+    /* assignedpupies*/
+   
+    .head-none {
+        display: none !important;
+    }
+    .mobile-table .title h3 {
+        font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+text-decoration-line: underline;
+
+color: #F99B96;
+    }
+
+    /* litters2 */
+
+    .litters-2 .right-side {
+        margin: 0 !important;
+    }
+    .litters-2 .edit-title {
+        margin-left: 10px !important;
+    }
+    .litters-2  .des {
+        margin-top: 20px;
+    }
+
+    .litters-2 .two-images {
+        margin: auto;
+        justify-content: space-around !important;
+    }
+    .litters-2 .swiper-container .swiper-slide {
+        width: 81% !important;
+        margin: 0 20px;
+        padding: 0;
+    }
+    .litters-2 .status .head, .litters-2 .foot  {
+        margin: 0 !important;
+    }
+    /* waiting-lists-2 */
+    .waiting-lists-2 .head {
+        display: none !important;
+    }
+
+    .waiting-lists-2 .head-mobile {
+        display: block !important;
+        width: 93%;
+        margin: auto;
+    }
+    .waiting-lists-2 .select-holder, .form-holder {
+        width: 100% !important;
+    }
+    .waiting-lists-2 .table-left, .waiting-lists-2  .table-right {
+        width: 34.3% ;
+    }
+
+    /* assignedpupies-2 */
+
+    .assignedpupies-2 #selectsearch {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .assignedpupies-2 .left-side {
+        width: 100%;
+    }
+    .assignedpupies-2 .right-side {
+        margin: 0 !important;
+    }
+
+    .assignedpupies-2 .sires-title {
+        width: 96%;
+        margin: auto;
+    }
+    .assignedpupies-2 .info-holder {
+        width: 95%;
+        margin: auto;
+    }
+    .assignedpupies-2 .info-holder .centered{
+        width: 96% !important;
+        margin: auto;
+    }
+
+    .assignedpupies-2 .total-puppies h2{
+        margin-left: 10px;
+    }
+    
+    /* addpuppy */
+    .addpupies .puppy-image {
+        display: block !important;
+    }
+    .addpupies .puppy-image img {
+        width: 100% !important;
+    }
+    .addpupies .first-add {
+        width: 93%;
+        margin: auto;
+    }
+    .addpupies .right-side {
+        margin-top: 20px !important;
+    }
+    
+  }

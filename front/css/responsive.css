@@ -1,0 +1,219 @@
+@media only screen and (max-width: 600px) {
+    #menu-items .nav-item a {
+        font-size: 20px;
+        line-height: 35px;
+
+    } 
+    #menu-items .nav-item .main-button {
+        width: 100%;
+    }
+    #menu-items .ellips {
+        display: none;
+    }
+    #menu-items .menu-close button {
+        margin-top: 5px;
+    }
+   .desktop-menu {
+       display: none !important;
+   }
+   .mobile-menu {
+       display: block;
+   }
+   #menu {
+       display: none;
+   } 
+   header {
+       overflow-x: hidden;
+   }
+
+   header h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+   }
+
+   header h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 120%;
+    /* or 36px */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+   }
+   header .logo-area {
+       margin: 0px !important;
+   }
+   header .main-title {
+       margin-top: 45px;
+   }
+   .content .head-area h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    
+    color: #2C3F76;
+   }
+   .content .area {
+       width: 100% !important;
+   }
+   .content .head-area h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    
+    color: #212121;
+   }
+
+   .content .head-area .titles {
+       margin-left: 5px;
+   }
+   .content .img-area {
+       justify-content: start !important;
+   }
+   .content .img-area img
+   {
+    height: 300px;
+
+   }
+   .content .text-area,.content .text-holder {
+       display: block !important;
+   }
+   .content .images img {
+       margin-top: 7px;
+   }
+   .content .area .text-bottom {
+       width: 89%;
+   }
+
+   footer .items {
+       margin-top: 15px;
+   }
+   footer .items  div {
+       width: 90% !important;
+   }
+
+   footer .items .button {
+       margin-bottom: 20px;
+   }
+   footer .items .main-button {
+       width: 100% !important;
+   }
+   footer .foot-logo {
+       display: block !important;
+       padding: 20px;
+   }
+   footer .foot-logo .email-side div {
+       margin: 0 !important;
+       padding-bottom: 50px;
+   }
+
+   footer .foot-logo {
+       height: 100%;
+   }
+   footer h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+    
+    color: #212121;
+   }
+   footer img {
+       width: 100%;
+       height: 100%;
+   }
+
+   /*male*/
+   .types .single-item .button .main-button {
+       width: 100%;
+       margin-bottom: 10px;
+   }
+   .types .single-item {
+       width: 93%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .types img {
+       max-width: 100%;
+       height: auto;
+   }
+   /* litterdetail*/
+   .content-litter .content-head {
+       justify-content: space-around !important;
+   }
+   .slider .slide-item .main-img img {
+       width: 100%;
+       height: auto;
+   }
+   .content-litter .photo-desktop {
+       display: none;
+   }
+   .content-litter .photo-mobile {
+    display: block;
+}
+.content-litter .swiper-slide{
+    width: 92% !important;
+    margin-right: 15px;
+}
+.content-litter .swiper-slide img{
+    width: 100%;
+    height: 388px;
+}
+.content-litter .my-col {
+    margin-left: -50px !important;
+}
+.content-litter .my-col-text {
+    margin-left: -10px !important;
+
+}
+.main .home-title .first-title h1 {
+    right: 0;
+}
+.main .home-title .second-title h1
+{
+    right: 0;
+}
+.main .home-title .and h2 {
+    right: 130px;
+    top: -30px;
+}
+
+.main .home-title .first-title h1 {
+    position: static;
+}
+.main .home-title .and h2 {
+    position: static;
+    text-align: center;
+}
+.main .home-title .second-title h1 {
+    position: static;
+    text-align: end;
+}
+.main .contact-button {
+    position: static;
+    width: 90%;
+    margin: auto;
+}
+.main .home-title .first-title {
+    height: auto;
+}
+.main {
+    width: 100% !important;
+}
+.navbar .mynav {
+    width: 75% !important;
+}
+  }

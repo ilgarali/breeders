@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/flatpickr.min.css">
+    <script src="./js/flatpickr.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+    <title>Lord or a lady </title>
+</head>
+
+<body>
+    <section id="lord-or-lady">
+        <div class="container-fluid p-0">
+            <div class="main-holder d-flex flex-row">
+                <div class="nav-menu">
+                    <div class="logo">
+                     <h1 class="nav-logo text-white   text-uppercase"> Logo</h1>
+                     <div class="menu-button">
+                         <i class="bi bi-list menu-icon"></i>
+                         <i class="bi bi-x close-nav"></i>
+                     </div>
+                     
+                    </div>
+ 
+                     <div class="menu ">
+                         <div class="menu-items active">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Sires and Dams</a>
+                                 <i class="arrow-up"></i>
+                             </div>
+                             <div class="links"><a href="./lordandladies.html" class="active-link ">View Sires and
+                                     Dams</a></div>
+                             <div class="links"><a href="./addsire.html" class="link">Add a Sire or Dams</a></div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Liters</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./litters.html" class="active-link ">View Litters</a></div>
+                                 <div class="links"><a href="./addlitter.html" class="link">Add Litters</a></div>
+                                 <div class="links"><a href="./addpuppy.html" class="link">Add Puppies</a></div>
+                                 <div class="links"><a href="./drafts.html" class="link">Drafts</a></div>
+ 
+ 
+                             </div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a  class="main-link">Waiting Lists</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./waitinglists-2.html" class="active-link ">View Waiting lists</a></div>
+                                 <div class="links"><a href="./assignedpupies.html" class="link">Assigned Puppies</a></div>
+                             </div>
+ 
+                         </div>
+                     </div>
+                 </div>
+                <div class="main-area w-100 mr-27 litters-2">
+                    <div class="head d-flex  my-4 align-items-center justify-content-between">
+                        <a href="" class="d-flex litter-back">
+                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65686 0.92893L0.292893 7.29289ZM29 7L1 7L1 9L29 9L29 7Z"
+                                    fill="#2C3F76" />
+                            </svg>
+                            <h4 class="edit-title m-0">Litter Details</h4>
+                        </a>
+
+                        <div class="right-side me-5">
+                            <button id="submit-all" class="btn main-button add-button">Add pupies</button>
+                        </div>
+                    </div>
+
+                    <div class="container ">
+                        <div class="row p-0">
+                            <div class="col-md-3">
+                                <div class="d-flex rounded-image-holder justify-content-between text-center two-images">
+                                    <div class="">
+                                        <img src="./img/rounded1.png" class="rounded-circle" alt="...">
+                                        <h5>Sire</h5>
+                                        <h6>Sire</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./img/rounded1.png" class="rounded-circle" alt="...">
+                                        <h5>Dams</h5>
+                                        <h6>Dams</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-5 des">
+                                <h6>Description</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, exercitationem nemo
+                                    ratione qui similique repellendus illo nulla officiis adipisci dolores suscipit
+                                    consequuntur itaque. Quis rerum nostrum, dolores autem deleniti illo.</p>
+                            </div>
+                            <div class="col-md-4 status">
+                                <div class="head ms-3 my-3">
+                                    <h5>Status</h5>
+                                    <h6>Active</h6>
+                                </div>
+                                <div class="foot ms-3">
+                                    <h5>Approximate Delivery Date</h5>
+                                    <h6>03/03/21</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-4 ">
+
+
+                        <div class="row p-0">
+                            <div class="col-md-12 img-holder p-0">
+                                <div class="swiper-container swiper-main">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                               <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="photos m-0">
+                                                <div class="swiper-container swiper-1">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"> <img src="./img/ss2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/ss3.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs ">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                               
+                                            </div>
+                                           
+
+                                            <div class="videos">
+                                                <div class="swiper-container swiper-2">
+                                                    <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide"> <img src="./img/s2.png"
+                                                                class="img-fluid" alt=""></div>
+                                                        <div class="swiper-slide"> <img src="./img/s1.png"
+                                                                class="img-fluid" alt=""></div>
+
+                                                        <div class="swiper-slide"> <img src="./img/s3.png"
+                                                                class="img-fluid" alt="">
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="ls-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.06872 11.0763L10.7818 20.7625C11.1001 21.0797 11.6153 21.0792 11.933 20.7609C12.2505 20.4426 12.2497 19.9271 11.9314 19.6097L2.79641 10.5L11.9317 1.39027C12.2499 1.07281 12.2508 0.557611 11.9333 0.23933C11.7741 0.0797806 11.5654 3.86763e-06 11.3568 3.88587e-06C11.1487 3.90406e-06 10.9409 0.0792466 10.7819 0.23769L1.06872 9.9237C0.915444 10.0762 0.829434 10.2837 0.829434 10.5C0.829434 10.7162 0.91569 10.9235 1.06872 11.0763Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+
+                                                </div>
+                                                <div class="rs-2">
+                                                    <svg width="13" height="21" viewBox="0 0 13 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.9313 9.92373L2.21816 0.237475C1.89992 -0.0796975 1.38469 -0.0791643 1.06698 0.239116C0.749522 0.557355 0.750343 1.07288 1.06862 1.3903L10.2036 10.5L1.06829 19.6097C0.750055 19.9272 0.749235 20.4424 1.06665 20.7607C1.22592 20.9202 1.43456 21 1.64321 21C1.85132 21 2.05915 20.9208 2.21812 20.7623L11.9313 11.0763C12.0846 10.9238 12.1706 10.7163 12.1706 10.5C12.1706 10.2838 12.0843 10.0765 11.9313 9.92373Z"
+                                                            fill="#97B8EA" />
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-pagination swiper-pagination-2"></div>
+                                            </div>
+                                            <div class="select-media d-flex gap-4">
+                                                <div class="p-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class="check-active d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Photos Only</h6>
+                                                </div>
+                                                <div class="v-only d-flex">
+                                                    <div
+                                                        class="check d-flex justify-content-center align-content-center ">
+                                                        <div class=" d-flex align-self-center">
+
+                                                        </div>
+                                                    </div>
+                                                    <h6>Videos Only</h6>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="pagination d-flex justify-content-center align-content-center my-3 gap-2">
+                                                <div class="p-circle p-active">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                                <div class="p-circle">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="info-sex mt-3 status d-flex justify-content-between">
+                                                <div class="info-hold">
+                                                    <h5>Sex</h5>
+                                                    <h4>Male</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Name</h5>
+                                                    <h4>John</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Color</h5>
+                                                    <h4>White</h4>
+                                                </div>
+                                                <div class="info-hold">
+                                                    <h5>Birth Date</h5>
+                                                    <h4>21/02/20</h4>
+                                                </div>
+                                            </div>
+                                            <div class="info-des mt-3">
+                                                <h5 class="t-title ">Description</h5>
+                                                <p class="p-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                                    nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                                     labore et dolore magna aliqua.
+                                                </p>
+                                            </div>
+                                            <div class="document-area">
+                                                <h6>Documents</h6>
+                                                <div class="documents my-2" id="">
+                                                    <div class="document-item d-flex justify-content-between  my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+                
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between my-2">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="button d-flex justify-content-end">
+                                <button class=" btn main-button" id="cancel">Edit Puppy</button>
+
+                                            </div>
+
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="my-5 progress-b w-100">
+                                    <div class="active-progress" >
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./js/dropzone.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

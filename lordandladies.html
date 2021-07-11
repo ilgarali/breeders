@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+    <title>Lord or a lady </title>
+</head>
+
+<body>
+    <section id="lord-or-lady">
+        <div class="container-fluid p-0">
+            <div class="main-holder d-flex flex-row">
+                <div class="nav-menu">
+                    <div class="logo">
+                     <h1 class="nav-logo text-white   text-uppercase"> Logo</h1>
+                     <div class="menu-button">
+                         <i class="bi bi-list menu-icon"></i>
+                         <i class="bi bi-x close-nav"></i>
+                     </div>
+                     
+                    </div>
+ 
+                     <div class="menu ">
+                         <div class="menu-items active">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Sires and Dams</a>
+                                 <i class="arrow-up"></i>
+                             </div>
+                             <div class="links"><a href="./lordandladies.html" class="active-link ">View Sires and
+                                     Dams</a></div>
+                             <div class="links"><a href="./addsire.html" class="link">Add a Sire or Dams</a></div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Liters</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./litters.html" class="active-link ">View Litters</a></div>
+                                 <div class="links"><a href="./addlitter.html" class="link">Add Litters</a></div>
+                                 <div class="links"><a href="./addpuppy.html" class="link">Add Puppies</a></div>
+                                 <div class="links"><a href="./drafts.html" class="link">Drafts</a></div>
+ 
+ 
+                             </div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a  class="main-link">Waiting Lists</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./waitinglists-2.html" class="active-link ">View Waiting lists</a></div>
+                                 <div class="links"><a href="./assignedpupies.html" class="link">Assigned Puppies</a></div>
+                             </div>
+ 
+                         </div>
+                     </div>
+                 </div>
+                <div class="main-area w-100 mr-27">
+                    <div class="head d-flex   align-items-center justify-content-between">
+                        <div class="left-side d-flex align-items-center">
+                            <h4 class="sires-title">View Sires and Dams</h4>
+                            <div class="search desktop-search">
+                                <i class="bi bi-search search-icon"></i>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </div>
+
+                        <div class="right-side ">
+                            <a href="./addsire.html" id="submit-all" class="btn main-button add-button">Add Sire or Dam</a>
+                        </div>
+                    </div>
+                    <div class="head mobile-search">
+                        <div class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="head-foot d-flex justify-content-between">
+                        <div class="check-area d-flex justify-content-between">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Sires
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Dams
+                                </label>
+                            </div>
+                        </div>
+                        <div class="sort-area mr-27">
+                            <div class="dropdown">
+                                <a class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sort by Date
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-area lordandladies table-responsive desktop-table">
+                        <table class="table ">
+                            <thead>
+                                <tr class="text-uppercase">
+
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Profile Photo</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Date Added</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>Name</td>
+                                    <td>
+                                        <img src="./img/p1.png" class="img-fluid" alt="">
+                                    </td>
+                                    <td>Sire</td>
+                                    <td>03/07/2021</td>
+                                    <td>
+                                        <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>Name</td>
+                                    <td>
+                                        <img src="./img/p1.png" class="img-fluid" alt="">
+                                    </td>
+                                    <td>Sire</td>
+                                    <td>03/07/2021</td>
+                                    <td>
+                                        <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>Name</td>
+                                    <td>
+                                        <img src="./img/p1.png" class="img-fluid" alt="">
+                                    </td>
+                                    <td>Sire</td>
+                                    <td>03/07/2021</td>
+                                    <td>
+                                        <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>Name</td>
+                                    <td>
+                                        <img src="./img/p1.png" class="img-fluid" alt="">
+                                    </td>
+                                    <td>Sire</td>
+                                    <td>03/07/2021</td>
+                                    <td>
+                                        <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>Name</td>
+                                    <td>
+                                        <img src="./img/p1.png" class="img-fluid" alt="">
+                                    </td>
+                                    <td>Sire</td>
+                                    <td>03/07/2021</td>
+                                    <td>
+                                        <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>Name</td>
+                                    <td>
+                                        <img src="./img/p1.png" class="img-fluid" alt="">
+                                    </td>
+                                    <td>Sire</td>
+                                    <td>03/07/2021</td>
+                                    <td>
+                                        <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mobile-table mt-4">
+                        <div class="m-holder p-3 my-2">
+                            <div class="head-table d-flex justify-content-between">
+                                <div class="table-left d-flex gap-2">
+                                    <img src="./img/p1.png" class="img-fluid" alt="">
+                                    <div class="title">
+                                        <h1>Name</h1>
+                                        <h2>Name</h2>
+                                    </div>
+                                </div>
+                                <div class="table-right d-flex ">
+                                    <div class="title">
+                                        <h1>Date added</h1>
+                                        <h2> 03/07/2021</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot-table d-flex justify-content-between mt-3">
+                                <div class="title">
+                                    <h1>Date added</h1>
+                                    <h2> 03/07/2021</h2>
+                                </div>
+                                <div class="action">
+                                    <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-holder p-3 my-2">
+                            <div class="head-table d-flex justify-content-between">
+                                <div class="table-left d-flex gap-2">
+                                    <img src="./img/p1.png" class="img-fluid" alt="">
+                                    <div class="title">
+                                        <h1>Name</h1>
+                                        <h2>Name</h2>
+                                    </div>
+                                </div>
+                                <div class="table-right d-flex ">
+                                    <div class="title">
+                                        <h1>Date added</h1>
+                                        <h2> 03/07/2021</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot-table d-flex justify-content-between mt-3">
+                                <div class="title">
+                                    <h1>Date added</h1>
+                                    <h2> 03/07/2021</h2>
+                                </div>
+                                <div class="action">
+                                    <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                        <ul class="dropdown-menu" aria-labelledby="cancel">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                    <span>View</span> </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Edit</span>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+
+                                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                            stroke="#97B8EA" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span> Delete</span>
+                                                </a></li>
+                                        </ul>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-holder p-3 my-2">
+                            <div class="head-table d-flex justify-content-between">
+                                <div class="table-left d-flex gap-2">
+                                    <img src="./img/p1.png" class="img-fluid" alt="">
+                                    <div class="title">
+                                        <h1>Name</h1>
+                                        <h2>Name</h2>
+                                    </div>
+                                </div>
+                                <div class="table-right d-flex ">
+                                    <div class="title">
+                                        <h1>Date added</h1>
+                                        <h2> 03/07/2021</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot-table d-flex justify-content-between mt-3">
+                                <div class="title">
+                                    <h1>Date added</h1>
+                                    <h2> 03/07/2021</h2>
+                                </div>
+                                <div class="action">
+                                    <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                            <ul class="dropdown-menu" aria-labelledby="cancel">
+                                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                        <span>View</span> </a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+    
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                                stroke="#97B8EA" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span>Edit</span>
+                                                    </a></li>
+                                                <li><a class="dropdown-item" href="#">
+    
+                                                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                                stroke="#97B8EA" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span> Delete</span>
+                                                    </a></li>
+                                            </ul>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-holder p-3 my-2">
+                            <div class="head-table d-flex justify-content-between">
+                                <div class="table-left d-flex gap-2">
+                                    <img src="./img/p1.png" class="img-fluid" alt="">
+                                    <div class="title">
+                                        <h1>Name</h1>
+                                        <h2>Name</h2>
+                                    </div>
+                                </div>
+                                <div class="table-right d-flex ">
+                                    <div class="title">
+                                        <h1>Date added</h1>
+                                        <h2> 03/07/2021</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot-table d-flex justify-content-between mt-3">
+                                <div class="title">
+                                    <h1>Date added</h1>
+                                    <h2> 03/07/2021</h2>
+                                </div>
+                                <div class="action">
+                                    <button class=" btn main-button  dropdown-toggle" type="button" id="cancel"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="cancel">Action</button>
+                                            <ul class="dropdown-menu" aria-labelledby="cancel">
+                                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i>
+                                                        <span>View</span> </a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">
+    
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M13.3096 1.49993C13.5284 1.28106 13.7883 1.10744 14.0742 0.988988C14.3602 0.870536 14.6667 0.80957 14.9762 0.80957C15.2858 0.80957 15.5923 0.870536 15.8782 0.988988C16.1642 1.10744 16.424 1.28106 16.6429 1.49993C16.8618 1.7188 17.0354 1.97863 17.1538 2.2646C17.2723 2.55057 17.3333 2.85706 17.3333 3.16659C17.3333 3.47612 17.2723 3.78262 17.1538 4.06859C17.0354 4.35455 16.8618 4.61439 16.6429 4.83326L5.3929 16.0833L0.80957 17.3333L2.05957 12.7499L13.3096 1.49993Z"
+                                                                stroke="#97B8EA" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span>Edit</span>
+                                                    </a></li>
+                                                <li><a class="dropdown-item" href="#">
+    
+                                                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M3.80957 4.00008V2.33341C3.80957 1.89139 3.98517 1.46746 4.29773 1.1549C4.61029 0.842343 5.03421 0.666748 5.47624 0.666748H8.80957C9.2516 0.666748 9.67552 0.842343 9.98808 1.1549C10.3006 1.46746 10.4762 1.89139 10.4762 2.33341V4.00008M12.9762 4.00008V15.6667C12.9762 16.1088 12.8006 16.5327 12.4881 16.8453C12.1755 17.1578 11.7516 17.3334 11.3096 17.3334H2.97624C2.53421 17.3334 2.11029 17.1578 1.79773 16.8453C1.48516 16.5327 1.30957 16.1088 1.30957 15.6667V4.00008H12.9762Z"
+                                                                stroke="#97B8EA" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                        <span> Delete</span>
+                                                    </a></li>
+                                            </ul>  
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/dropzone.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/flatpickr.min.css">
+    <script src="./js/flatpickr.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+    <title>Lord or a lady </title>
+</head>
+
+<body>
+    <section id="lord-or-lady">
+        <div class="container-fluid p-0">
+            <div class="main-holder d-flex flex-row">
+                <div class="nav-menu">
+                    <div class="logo">
+                     <h1 class="nav-logo text-white   text-uppercase"> Logo</h1>
+                     <div class="menu-button">
+                         <i class="bi bi-list menu-icon"></i>
+                         <i class="bi bi-x close-nav"></i>
+                     </div>
+                     
+                    </div>
+ 
+                     <div class="menu ">
+                         <div class="menu-items active">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Sires and Dams</a>
+                                 <i class="arrow-up"></i>
+                             </div>
+                             <div class="links"><a href="./lordandladies.html" class="active-link ">View Sires and
+                                     Dams</a></div>
+                             <div class="links"><a href="./addsire.html" class="link">Add a Sire or Dams</a></div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Liters</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./litters.html" class="active-link ">View Litters</a></div>
+                                 <div class="links"><a href="./addlitter.html" class="link">Add Litters</a></div>
+                                 <div class="links"><a href="./addpuppy.html" class="link">Add Puppies</a></div>
+                                 <div class="links"><a href="./drafts.html" class="link">Drafts</a></div>
+ 
+ 
+                             </div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a  class="main-link">Waiting Lists</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./waitinglists-2.html" class="active-link ">View Waiting lists</a></div>
+                                 <div class="links"><a href="./assignedpupies.html" class="link">Assigned Puppies</a></div>
+                             </div>
+ 
+                         </div>
+                     </div>
+                 </div>
+                <div class="main-area w-100">
+                    <div class="container">
+                        <div class="add row ">
+
+                            <div class="col-md-3 first-add ">
+                                <a href="" class="d-flex">
+                                    <svg width="29" height="16" viewBox="0 0 29 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65686 0.92893L0.292893 7.29289ZM29 7L1 7L1 9L29 9L29 7Z"
+                                        fill="#2C3F76" />
+                                </svg>
+                                <h4 class="edit-title">Edit Liter</h4>
+                                </a>
+                            </div>
+                            <div class=" col-md-4 second-add text-center">
+                                <h4 class="edit-title">Edit a Liter</h4>
+                            </div>
+                            <div class=" col-md-5 second-add ">
+                                <div class="button-holder d-flex justify-content-end">
+                                    <button class=" btn main-button " id="cancel">Close Litter</button>
+    
+                                    <button id="submit-all" class="btn main-button mx-3">Reccord Birth</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-area d-flex justify-content-center align-items-center">
+                        <form action="/upload" method="post" class="" id="firstdr">
+                            <div class="form-holder d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="exampleInputEmail1" class="form-label label-others d-block">Litter name</label>
+                                    <input class="inputs" type="text" placeholder="Title">
+                                </div>
+                            </div>
+                            <div class="form-holder  d-flex justify-content-center align-items-center my-2">
+                                <div>
+                                    <label for="exampleInputEmail1" class="form-label d-block">Select a litter</label>
+                                    <div class="select-holder ">
+
+                                        <select name="" id="">
+                                            <option value="">Sire</option>
+                                        </select>
+                                        <i class="select-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-holder  d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="exampleInputEmail1" class="form-label d-block">Select a Dam</label>
+                                    <div class="select-holder ">
+
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                        <i class="select-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-holder d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="exampleInputEmail1" class="form-label label-others d-block">Expected amount of pupies</label>
+                                    <input class="inputs" type="text">
+                                </div>
+                            </div>
+                            <div class="form-holder  d-flex justify-content-center align-items-center">
+                                <div class="date-holder">
+                                    <label for="exampleInputEmail1" class="form-label label-others d-block">Expected delivery dates</label>
+                                    <input class="inputs" id="date" placeholder="" type="date">
+                                    <i class="bi bi-calendar4"></i>
+                                </div>
+                            </div>
+                            <div class="form-holder d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="exampleInputEmail1" class="form-label label-others d-block">Expected puppy color</label>
+                                    <input class="inputs" type="text">
+                                </div>
+                            </div>
+                            <div class="form-holder form-holder d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="exampleInputEmail1"
+                                        class="form-label label-others d-block">Description</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="document-area">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h6 class="w-386">Documents</h6>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="documents " id="docs">
+
+                                        <div class="document-item d-flex justify-content-between  ">
+                                            <h5 class="d-flex align-self-center">Document Text 1</h5>
+    
+                                            <button type="button" class="btn-close delete"></button>
+                                        </div>
+                                        <div class="document-item d-flex justify-content-between  ">
+                                            <h5 class="d-flex align-self-center">Document Text 1</h5>
+    
+                                            <button type="button" class="btn-close delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-area">
+                                <div class="dropzone w-386" id="my-dropzone" name="mainFileUploader">
+                                    <div class="dz-default dz-message">
+                                        <h5 class="d-flex align-self-center">Drag or Drop upload document</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photos w-386">
+                                <h6>Photos</h6>
+                                <div class="row p-0 g-0" id="images">
+
+                                </div>
+                            </div>
+                            <div class="file-area">
+                                <div class="dropzone2 w-386" id="secondzone" name="mainFileUploader">
+                                    <div class="dz-default dz-message">
+                                        <h5 class="d-flex align-self-center">Drag and Drop or Upload document</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-holder d-flex justify-content-between pb-3">
+                                <button class=" btn main-button" id="cancel">Cancel</button>
+
+                                <button id="submit-all" class="btn main-button">Save</button>
+                            </div>
+                            <div class="draft-button w-100 mb-3">
+                                <button class=" btn main-button w-100" id="cancel">Save as draft</button>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./js/dropzone.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+    <script>
+        const date = document.querySelector('#date')
+        flatpickr(date, {});
+    </script>
+</body>
+
+</html>

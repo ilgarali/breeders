@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/flatpickr.min.css">
+    <script src="./js/flatpickr.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+    <title>Lord or a lady </title>
+</head>
+
+<body>
+    <section id="lord-or-lady">
+        <div class="container-fluid p-0">
+            <div class="main-holder d-flex flex-row">
+                <div class="nav-menu">
+                    <div class="logo">
+                     <h1 class="nav-logo text-white   text-uppercase"> Logo</h1>
+                     <div class="menu-button">
+                         <i class="bi bi-list menu-icon"></i>
+                         <i class="bi bi-x close-nav"></i>
+                     </div>
+                     
+                    </div>
+ 
+                     <div class="menu ">
+                         <div class="menu-items active">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Sires and Dams</a>
+                                 <i class="arrow-up"></i>
+                             </div>
+                             <div class="links"><a href="./lordandladies.html" class="active-link ">View Sires and
+                                     Dams</a></div>
+                             <div class="links"><a href="./addsire.html" class="link">Add a Sire or Dams</a></div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a class="main-link">Liters</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./litters.html" class="active-link ">View Litters</a></div>
+                                 <div class="links"><a href="./addlitter.html" class="link">Add Litters</a></div>
+                                 <div class="links"><a href="./addpuppy.html" class="link">Add Puppies</a></div>
+                                 <div class="links"><a href="./drafts.html" class="link">Drafts</a></div>
+ 
+ 
+                             </div>
+ 
+                         </div>
+                         <div class="menu-items ">
+                             <div class="d-flex justify-content-around ">
+                                 <a  class="main-link">Waiting Lists</a>
+                                 <i class="arrow-down"></i>
+                             </div>
+                             <div class="children-links">
+                                 <div class="links"><a href="./waitinglists-2.html" class="active-link ">View Waiting lists</a></div>
+                                 <div class="links"><a href="./assignedpupies.html" class="link">Assigned Puppies</a></div>
+                             </div>
+ 
+                         </div>
+                     </div>
+                 </div>
+                <div class="main-area w-100 mr-27 waiting-lists assignedpupies-2 addpupies">
+                    <div class="add row ">
+
+                        <div class="col-md-6 first-add ">
+                            <a href="" class="d-flex">
+                                <svg width="29" height="16" viewBox="0 0 29 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65686 0.92893L0.292893 7.29289ZM29 7L1 7L1 9L29 9L29 7Z"
+                                        fill="#2C3F76" />
+                                </svg>
+                                <h4 class="edit-title">Add a Puppy</h4>
+                            </a>
+
+                            <div class="head-foot ">
+                                <div class="form-holder my-2">
+                                    <div>
+                                        <label for="exampleInputEmail1" class="form-label d-block">Litters</label>
+                                        <div class="select-holder ">
+
+                                            <select name="" id="">
+                                                <option value="">All Litters</option>
+                                            </select>
+                                            <i class="select-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" col-md-6 second-add ">
+                            <div class="button-holder d-flex justify-content-end">
+
+
+                                <button type="button" id="submit-all" class="btn main-button mx-3"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Add puppies</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-area ">
+                                        <form action="/upload" method="post" class="" id="firstdr">
+                                            <div class="form-holder w-75 m-auto">
+                                                <label for="exampleInputEmail1" class="form-label m-auto">Type</label>
+                                                <div class="select-holder ">
+                                                    <select name="" id="">
+                                                        <option value="">Sire</option>
+                                                    </select>
+                                                    <i class="select-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-holder w-75 m-auto">
+                                                <label for="exampleInputEmail1"
+                                                    class="form-label label-others">Age</label>
+                                                <div>
+                                                    <input class="inputs" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-holder w-75 m-auto">
+                                                <label for="exampleInputEmail1"
+                                                    class="form-label label-others">Name</label>
+                                                <div>
+                                                    <input class="inputs" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-holder w-75 m-auto">
+                                                <label for="exampleInputEmail1"
+                                                    class="form-label label-others">Description</label>
+                                                <div>
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="document-area w-75 m-auto">
+                                                <h6>Documents</h6>
+                                                <div class="documents" id="docs">
+                                                    <div class="document-item d-flex justify-content-between  ">
+                                                        <h5 class="d-flex align-self-center">Document Text 1</h5>
+
+                                                        <button type="button" class="btn-close delete"></button>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between">
+                                                        <h5 class="d-flex align-self-center">Document Text 2</h5>
+                                                        <button type="button" class="btn-close delete"></button>
+                                                    </div>
+                                                    <div class="document-item d-flex justify-content-between">
+                                                        <h5 class="d-flex align-self-center">Document Text 3</h5>
+
+                                                        <button type="button" class="btn-close delete"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="file-area w-75 m-auto">
+                                                <div class="dropzone" id="my-dropzone" name="mainFileUploader">
+                                                    <div class="dz-default dz-message">
+                                                        <h5 class="d-flex align-self-center">Drag or Drop upload
+                                                            document</h5>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="photos w-75 m-auto">
+                                                <h6 class="my-3"> Photos</h6>
+                                                <div class="container my-2">
+                                                    <div class="row p-0 g-1" id="images">
+                                                        <div class="col-md-4     img-holder">
+                                                            <img src="./img/d1.png" class="img-fluid" alt="" srcset="">
+                                                            <i class="bi bi-x closeitem delete"></i>
+
+                                                        </div>
+                                                        <div class="col-md-4    img-holder">
+                                                            <img src="./img/d2.png" class="img-fluid" alt="" srcset="">
+                                                            <i class="bi bi-x closeitem delete"></i>
+
+                                                        </div>
+                                                        <div class="col-md-4    img-holder">
+                                                            <img src="./img/d3.png" class="img-fluid" alt="" srcset="">
+                                                            <i class="bi bi-x closeitem delete"></i>
+
+                                                        </div>
+                                                        <div class="col-md-4   img-holder">
+                                                            <img src="./img/d2.png" class="img-fluid" alt="" srcset="">
+                                                            <i class="bi bi-x closeitem delete"></i>
+                                                        </div>
+                                                        <div class="col-md-4  img-holder">
+                                                            <img src="./img/d3.png" class="img-fluid" alt="" srcset="">
+                                                            <i class="bi bi-x closeitem delete"></i>
+
+                                                        </div>
+                                                        <div class="col-md-4   img-holder">
+                                                            <img src="./img/d1.png" class="img-fluid" alt="" srcset="">
+                                                            <i class="bi bi-x closeitem delete"></i>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="file-area w-75 m-auto">
+                                                <div class="dropzone2" id="secondzone" name="mainFileUploader">
+                                                    <div class="dz-default dz-message">
+                                                        <h5 class="d-flex align-self-center">Drag and Drop or Upload
+                                                            document</h5>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-holder w-75 m-auto">
+                                                <label for="exampleInputEmail1" class="form-label label-others">Video
+                                                    Url</label>
+                                                <div>
+                                                    <input class="inputs" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-holder w-100 ">
+
+                                                <div class="button-holder ms-4 d-flex justify-content-around mt-2">
+                                                    <button class=" btn main-button ms-3" id="cancel">Cancel</button>
+
+                                                    <button id="submit-all" class="btn main-button">Save</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row p-0">
+                            <div class="col-md-6 p-0">
+                                <div class="total-puppies my-2">
+
+                                    <div class="info-holder my-2">
+                                        <div class="d-flex ">
+                                            <img src="./img/s2.png" class="rounded-circle ms-3" alt="">
+                                            <h2 class="ms-3 my-auto ">Name</h2>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="info-holder my-2">
+                                        <div class="d-flex ">
+                                            <img src="./img/s2.png" class="rounded-circle ms-3" alt="">
+                                            <h2 class="ms-3 my-auto ">Name</h2>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="info-holder my-2">
+                                        <div class="d-flex ">
+                                            <img src="./img/s2.png" class="rounded-circle ms-3" alt="">
+                                            <h2 class="ms-3 my-auto ">Name</h2>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="info-holder my-2">
+                                        <div class="d-flex ">
+                                            <img src="./img/s2.png" class="rounded-circle ms-3" alt="">
+                                            <h2 class="ms-3 my-auto ">Name</h2>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="puppy-image d-flex justify-content-around">
+                                    <div class="left-side">
+                                        <img src="./img/r1.png" alt="">
+                                        <div class="text-side d-flex justify-content-between align-items-center">
+                                            <div class="t-detail">
+                                                <h2>Type</h2>
+                                                <h3>Sire</h3>
+                                            </div>
+                                            <div class="t-detail">
+                                                <h2>Age</h2>
+                                                <h3>3 years</h3>
+                                            </div>
+                                            <div class="t-detail">
+                                                <h2>Name</h2>
+                                                <h3>Dog Real</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="./img/r2.png" alt="">
+                                        <div class="text-side d-flex justify-content-between align-items-center">
+                                            <div class="t-detail">
+                                                <h2>Type</h2>
+                                                <h3>Sire</h3>
+                                            </div>
+                                            <div class="t-detail">
+                                                <h2>Age</h2>
+                                                <h3>3 years</h3>
+                                            </div>
+                                            <div class="t-detail">
+                                                <h2>Name</h2>
+                                                <h3>Dog Real</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="foot-info ms-3 mt-4">
+                                    <div class="text-uppercase">
+                                        <h3>Expected amount of Puppies</h3>
+                                        <h4>4</h4>
+                                        <h3>Expected delivery date</h3>
+                                        <h4>21/12/21</h4>
+
+                                    </div>
+                                    <h3> Expected Puppy colors</h3>
+                                    <h4>Black</h4>
+                                    <h3 class="text-uppercase">description</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                                <div class="slide mb-3 ms-4">
+                                    <div class="d-flex gap-3 m-auto justify-content-center align-items-center">
+                                        <div class="slid-item">
+                                            <img src="./img/sp1.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp2.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp3.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp4.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp1.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp2.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp3.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp4.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp3.png" alt="">
+                                        </div>
+                                        <div class="slid-item">
+                                            <img src="./img/sp4.png" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-pagination-4">
+
+                                    </div>
+                                    <div class="rs-4">
+
+                                        <svg width="15" height="27" viewBox="0 0 15 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.4832 12.7591L1.99492 0.305325C1.58576 -0.102468 0.923309 -0.101783 0.514831 0.307434C0.106668 0.716599 0.107723 1.37941 0.51694 1.78752L12.2619 13.5L0.516518 25.2125C0.107354 25.6207 0.106299 26.2831 0.514409 26.6923C0.719175 26.8974 0.987434 27 1.25569 27C1.52327 27 1.79047 26.8981 1.99487 26.6944L14.4832 14.241C14.6803 14.0449 14.7909 13.7781 14.7909 13.5C14.7909 13.222 14.68 12.9555 14.4832 12.7591Z"
+                                                fill="#97B8EA" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="ls-4">
+                                        <svg width="15" height="27" viewBox="0 0 15 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.516785 14.2409L13.0051 26.6947C13.4142 27.1025 14.0767 27.1018 14.4852 26.6926C14.8933 26.2834 14.8923 25.6206 14.4831 25.2125L2.73811 13.5L14.4835 1.78748C14.8926 1.37932 14.8937 0.716925 14.4856 0.307709C14.2808 0.102572 14.0126 3.88275e-06 13.7443 3.9062e-06C13.4767 3.9296e-06 13.2095 0.101887 13.0051 0.305599L0.516785 12.759C0.319718 12.9551 0.209133 13.2219 0.209133 13.5C0.209133 13.778 0.320034 14.0445 0.516785 14.2409Z"
+                                                fill="#97B8EA" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/dropzone.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

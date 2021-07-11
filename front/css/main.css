@@ -1,0 +1,741 @@
+* {
+    font-family: 'DM Serif Display', serif;
+    
+    
+}
+body {
+    overflow-x: hidden;
+}
+
+.main-button {
+    
+   
+    width: 223px;
+    height: 60px;
+    background: #2C3F76;
+    font-family: Open Sans !important;
+font-style: normal !important;
+font-weight: bold !important;
+font-size: 14px !important;
+line-height: 19px !important;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF !important;
+}
+
+
+
+#menu-items {
+    background: #E5E5E5;
+    width: 57%;
+    height: 83%;
+    visibility: hidden;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    transition: ease-out 0.3s;
+
+}
+.menu-open {
+    cursor: pointer;
+}
+.active-menu {
+    width: 65% !important;
+    height: 100% !important;
+    transition: ease-in 0.3s;
+
+    visibility: visible !important;
+}
+
+#menu-items .main-menu {
+    position: relative;
+}
+
+#menu-items .main-menu .foot-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#menu-items .ellips {
+    margin-top: -3px;
+}
+#menu-items .menu-close button {
+    margin-top: 75px;
+}
+
+#menu-items .logo-menu a{
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+white-space: nowrap;
+color: #212121;
+}
+
+#menu-items .nav-item a{ 
+    font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 55px;
+
+/* identical to box height */
+
+
+color: #212121;
+}
+
+header h2 {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+header h1 {
+
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+
+/* or 60px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+header .cane {
+    line-height: 20px;
+}
+
+.header a {
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+
+
+color: #FFFFFF;
+}
+
+.about {
+    background-image: linear-gradient(rgba(33, 33, 33, .5),
+    rgba(33, 33, 33, .5)),url('../img/h1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 267px;
+
+ 
+}
+a {
+    text-decoration: none;
+}
+.border-white {
+    border: 1px solid #fff;
+
+}
+
+.border-black {
+    border: 1px solid #000;
+
+}
+.mobile-menu {
+    display: none;
+}
+
+#menu .menu-holder {
+    margin-left: 53px;
+    margin-top: 81px;
+}
+ .menu-icon {
+
+    margin-top: 5px;
+    
+    width: 35px;
+    border: 1px solid #212121;
+}
+
+.content .area {
+    width: 89%;
+}
+.content .head-area h2 {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #2C3F76
+}
+
+.content .head-area h1
+{
+
+font-family: DM Serif Display;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 55px;
+/* identical to box height */
+
+
+color: #212121;
+}
+
+.content .text-area .left-side p {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+
+color: #626262;
+}
+.content .text-area .right-side .text 
+{
+    font-family: Open Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+width: 88%;
+    padding: 40px 40px 20px 40px;
+color: #252525;
+box-sizing: border-box;
+}
+.content .text-area .right-side
+{
+    background: #F4F4FC;
+    position: relative;
+}
+.content .text-area .right-side .quote-mark {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.content .area .text-bottom {
+    
+    width: 66%;
+    margin: 51px auto 5px auto;
+   
+}
+
+.content .area .text-bottom p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    
+    
+    color: #626262;
+}
+
+.content .area  .images img {
+    width: 260px;
+    height: 208px;
+}
+
+footer {
+    background: #F4F4FC;
+    margin-top: 120px;
+}
+
+footer h1 {
+    font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 110px;
+/* identical to box height */
+
+
+color: #212121
+}
+
+footer img {
+    width: 728px;
+height: 622px;
+
+}
+
+footer .items {
+    margin-top: 209px;
+}
+footer .foot-logo {
+    background: #0C0C0C;
+    height: 300px;
+    width: 100%;
+}
+
+footer .social-side h1 
+{
+    font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 96px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+footer .social-side .social-icon .border-icon
+{
+    width: 44px;
+height: 44px;
+
+
+background: #F4F4FC;
+border-radius: 100px;
+}
+
+footer .contact-holder p {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+footer .contact-holder i {
+    color: #0C0C0C;
+}
+
+/* male */
+
+.male {
+    background-image: linear-gradient(rgba(33, 33, 33, .5),
+    rgba(33, 33, 33, .5)),url('../img/h2.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 267px;
+
+ 
+}
+
+.types .single-item {
+    margin-top: 120px;
+}
+
+.types .single-item:first-child {
+    margin-top: 181px;
+}
+.types .single-item h6
+{
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+}
+
+.types .single-item h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+    /* identical to box height */
+    
+    
+    color: #212121;
+}
+
+.types .single-item p {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+
+color: #626262;
+}
+
+.types .single-item .button .main-button {
+    width: 286px;
+    margin-top: 20px;
+}
+.types img {
+    width: 705px;
+    height: 870px;
+}
+
+/* female*/
+
+.female {
+    background-image: linear-gradient(rgba(33, 33, 33, .5),
+    rgba(33, 33, 33, .5)),url('../img/h3.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 267px;
+
+}
+
+/* availability*/
+
+.availability {
+    background-image: linear-gradient(rgba(33, 33, 33, .5),
+    rgba(33, 33, 33, .5)),url('../img/h4.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 267px;
+}
+
+
+   .content .text-holder h1
+   {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    
+    color: #212121;
+   }
+   .content .text-holder h2
+
+   {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #212121;
+   }
+   .content .text-holder h3
+   {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    
+    color: #212121;
+   }
+
+
+   /* unique*/
+
+.unique {
+    background-image: linear-gradient(rgba(33, 33, 33, .5),
+    rgba(33, 33, 33, .5)),url('../img/h5.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 267px;
+}
+   /* rising*/
+
+   .rising {
+    background-image: linear-gradient(rgba(33, 33, 33, .5),
+    rgba(33, 33, 33, .5)),url('../img/h6.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 267px;
+   }
+
+   /* litterdetail*/
+
+   .litterdetail {
+    background-image: none ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 0;
+   }
+   .content-litter h6
+   {
+    font-family: 'Red Hat Display', sans-serif;
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    
+    text-transform: uppercase;
+    
+    color: #949494;
+   }
+   .content-litter h5
+   {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    
+    
+    color: #212121
+   }
+
+   .content-litter p {
+    font-family: 'Red Hat Display', sans-serif;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    
+    
+    color: #212121
+   }
+
+   .content-litter .docs  .single-doc {
+    width: 100%;
+    
+    
+    border-bottom: 1px solid #D1D1D1;
+   }
+
+   .content-litter .docs h3
+   {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    
+    
+    color: #212121;
+   }
+
+   .content-litter .circled {
+       width: 22px;
+       height: 22px;
+       border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+   }
+
+   .content-litter .choose h2 {
+    font-family: 'Red Hat Display', sans-serif;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #212121;
+    margin-top: 10px;
+   }
+
+   .content-litter .check-active {
+    height: 14px;
+    width: 14px;
+    background: #000000;
+    border-radius: 10px;
+   }
+
+   .content-litter .photos {
+       position: relative;
+   }
+
+   .content-litter .photos .arrows .left {
+       position: absolute;
+       top:  150px;
+       left: -50px;
+   }
+
+   .content-litter .photos .arrows .right {
+    position: absolute;
+    top:  150px;
+    right: -90px;
+}
+
+
+
+.content-litter .videos {
+    position: relative;
+}
+
+.content-litter .videos .arrows .left {
+    position: absolute;
+    top:  150px;
+    left: -50px;
+}
+
+.content-litter .videos .arrows .right {
+ position: absolute;
+ top:  150px;
+ right: -90px;
+}
+
+.slider .slide-item {
+    display: none;
+    transition: ease 1s;
+    
+}
+.slider .slide-active {
+    display: block;
+}
+
+.slider .slide-item .other-images img {
+    width: 189px;
+    height: 153px;
+}
+.slider .slide-item .main-img img {
+    width: 586px;
+}
+.content-litter .photo-mobile,.content-litter .video-mobile  {
+    display: none;
+}
+
+/* content-waiting*/
+.content-waiting form .form-holder label {
+    font-family: 'Red Hat Display', sans-serif;
+
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: #212121;
+}
+
+.content-waiting form .form-holder {
+    margin-top: 15px;
+}
+
+.content-waiting form .form-holder input {
+    width: 100%;
+height: 40px;
+
+
+border: 1px solid #CCCCCC;
+box-sizing: border-box;
+font-family: 'Red Hat Display', sans-serif;
+
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+
+
+color: #949494;
+} 
+
+.content-waiting form .form-holder input::placeholder {
+    padding-left: 20px;
+}
+
+.content-waiting form .check input {
+    width: 20px !important;
+height: 20px !important;
+border-radius: 0;
+
+border: 1px solid #000000 !important;
+box-sizing: border-box;
+}
+.content-waiting form button {
+    border: none;
+}
+
+
+
+.main .home-title {
+    position: relative;
+}
+
+.main .home-title h1 {
+    font-style: normal;
+font-weight: normal;
+font-size: 100px;
+
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.main .home-title h2 {
+    font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 55px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.main .home-title .first-title {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 231px;
+    width: 231px;
+    position: relative;
+
+}
+.main .home-title .and {
+    position: relative;
+}
+.main .home-title .and h2 {
+    position: absolute;
+    top: 70px;
+    right: 210px;
+    color: #212121;
+}
+.main .home-title .first-title h1 {
+    position: absolute;
+    top: 200px;
+    right: -65px;
+    color: #212121;
+}
+
+.main .home-title .second-title {
+    position: relative;
+}
+
+.main .home-title .second-title  h1 {
+    position: absolute;
+    top: 120px;
+    right: 70px;
+    color: #212121;
+}
+
+.main .contact-button {
+    position: absolute;
+    width: 285px;
+    height: 60px;
+    left: 100px;
+    top: 481px;
+    
+    border: 1px solid #212121;
+    box-sizing: border-box;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+    
+    color: #212121;
+}
